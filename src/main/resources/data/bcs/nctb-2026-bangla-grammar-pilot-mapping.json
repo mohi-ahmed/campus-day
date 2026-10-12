@@ -1,0 +1,58 @@
+{
+  "sourceId": "NCTB_2026_9_10_BANGLA_GRAMMAR",
+  "language": "BANGLA",
+  "ocrLanguage": "ben",
+  "dpi": 300,
+  "ranges": [
+    {
+      "pageStart": 34,
+      "pageEnd": 36,
+      "chapter": "পরিচ্ছেদ ১০",
+      "heading": "উপসর্গ",
+      "subjectCode": "BANGLA",
+      "topicCode": "BANGLA_LANGUAGE",
+      "subTopicCode": "BANGLA_LANGUAGE_PREFIX_SUFFIX",
+      "conceptCodes": ["BANGLA.GRAMMAR.PREFIX"]
+    },
+    {
+      "pageStart": 37,
+      "pageEnd": 41,
+      "chapter": "পরিচ্ছেদ ১১",
+      "heading": "প্রত্যয় দিয়ে শব্দ গঠন",
+      "subjectCode": "BANGLA",
+      "topicCode": "BANGLA_LANGUAGE",
+      "subTopicCode": "BANGLA_LANGUAGE_PREFIX_SUFFIX",
+      "conceptCodes": ["BANGLA.GRAMMAR.SUFFIX"]
+    },
+    {
+      "pageStart": 42,
+      "pageEnd": 45,
+      "chapter": "পরিচ্ছেদ ১২",
+      "heading": "সমাস প্রক্রিয়ায় শব্দ গঠন",
+      "subjectCode": "BANGLA",
+      "topicCode": "BANGLA_LANGUAGE",
+      "subTopicCode": "BANGLA_LANGUAGE_SANDHI_SAMAS",
+      "conceptCodes": ["BANGLA.GRAMMAR.SAMAS"]
+    },
+    {
+      "pageStart": 46,
+      "pageEnd": 48,
+      "chapter": "পরিচ্ছেদ ১৩",
+      "heading": "সন্ধি",
+      "subjectCode": "BANGLA",
+      "topicCode": "BANGLA_LANGUAGE",
+      "subTopicCode": "BANGLA_LANGUAGE_SANDHI_SAMAS",
+      "conceptCodes": ["BANGLA.GRAMMAR.SANDHI"]
+    },
+    {
+      "pageStart": 49,
+      "pageEnd": 50,
+      "chapter": "পরিচ্ছেদ ১৪",
+      "heading": "শব্দদ্বিত্ব",
+      "subjectCode": "BANGLA",
+      "topicCode": "BANGLA_LANGUAGE",
+      "subTopicCode": "BANGLA_LANGUAGE_WORD_FORMATION",
+      "conceptCodes": []
+    }
+  ]
+}

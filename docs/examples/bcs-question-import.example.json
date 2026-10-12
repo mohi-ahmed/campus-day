@@ -1,0 +1,50 @@
+{
+  "batchKey": "authorized-source-46th-bcs-v1",
+  "sourceName": "Authorized source name",
+  "sourceType": "PREVIOUS_BCS",
+  "sourceUrl": "https://example.org/source",
+  "rightsStatus": "CLEARED",
+  "licenseName": "Permission reference or license",
+  "attribution": "Required source attribution",
+  "retrievedAt": "2026-10-07T00:00:00Z",
+  "questions": [
+    {
+      "externalId": "46-bcs-q1",
+      "examType": "GENERAL",
+      "examNumber": 46,
+      "examLabelYear": 2022,
+      "preliminaryHeldDate": "2023-05-26",
+      "examSetCode": "MAIN",
+      "questionNumber": 1,
+      "language": "BANGLA",
+      "subjectCode": "BANGLA",
+      "topicCode": "GRAMMAR",
+      "subTopicCode": "SAMAS",
+      "conceptCodes": [
+        "BANGLA.GRAMMAR.SAMAS.BAHUBRIHI"
+      ],
+      "questionKind": "GRAMMAR",
+      "questionText": "অনুমোদিত উৎস থেকে নেওয়া প্রশ্নের উদাহরণ",
+      "options": [
+        { "key": "A", "text": "প্রথম বিকল্প" },
+        { "key": "B", "text": "দ্বিতীয় বিকল্প" },
+        { "key": "C", "text": "তৃতীয় বিকল্প" },
+        { "key": "D", "text": "চতুর্থ বিকল্প" }
+      ],
+      "correctOptionKey": "B",
+      "explanation": "যাচাই করা ব্যাখ্যা",
+      "difficulty": "MEDIUM",
+      "questionImageUrls": [],
+      "explanationImageUrls": [],
+      "tags": ["PREVIOUS_BCS", "BANGLA_GRAMMAR"],
+      "timeSensitive": false,
+      "validFrom": null,
+      "validUntil": null,
+      "answerConfidence": 1.0,
+      "labelConfidence": 0.95,
+      "rawPayload": {
+        "original_field": "Original source payload can be preserved here"
+      }
+    }
+  ]
+}

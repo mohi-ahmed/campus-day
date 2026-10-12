@@ -1,0 +1,31 @@
+{
+  "sourceId": "NCTB_2026_9_10_BANGLADESH_GLOBAL_STUDIES",
+  "language": "BANGLA",
+  "ocrLanguage": "ben",
+  "dpi": 300,
+  "ranges": [
+    {
+      "pageStart": 6,
+      "pageEnd": 18,
+      "chapter": "প্রথম অধ্যায়",
+      "heading": "পূর্ব বাংলার আন্দোলন ও জাতীয়তাবাদের উত্থান (১৯৪৭-১৯৭০)",
+      "subjectCode": "BANGLADESH_AFFAIRS",
+      "topicCode": "BD_NATIONAL_AFFAIRS",
+      "conceptCodes": [
+        "BD.HISTORY.LANGUAGE_MOVEMENT",
+        "BD.HISTORY.LIBERATION_WAR"
+      ]
+    },
+    {
+      "pageStart": 19,
+      "pageEnd": 30,
+      "chapter": "দ্বিতীয় অধ্যায়",
+      "heading": "বাংলাদেশের স্বাধীনতা",
+      "subjectCode": "BANGLADESH_AFFAIRS",
+      "topicCode": "BD_NATIONAL_AFFAIRS",
+      "conceptCodes": [
+        "BD.HISTORY.LIBERATION_WAR"
+      ]
+    }
+  ]
+}

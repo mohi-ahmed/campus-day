@@ -1,0 +1,70 @@
+projects:
+  - name: campus-day
+    environments:
+      - name: production
+        services:
+          - type: web
+            name: campus-day-api
+            runtime: docker
+            plan: free
+            region: singapore
+            dockerfilePath: ./Dockerfile
+            dockerContext: .
+            healthCheckPath: /api/study/assistant/status
+            autoDeployTrigger: commit
+            buildFilter:
+              paths:
+                - pom.xml
+                - mvnw
+                - .mvn/**
+                - src/**
+                - Dockerfile
+                - .dockerignore
+            envVars:
+              - key: SPRING_PROFILES_ACTIVE
+                value: render
+              - key: MONGODB_URI
+                sync: false
+              - key: MONGODB_DATABASE
+                value: CampusDay
+              - key: AUTH_JWT_SECRET
+                generateValue: true
+              - key: AUTH_OTP_PEPPER
+                generateValue: true
+              - key: CALENDAR_TOKEN_ENCRYPTION_KEY
+                generateValue: true
+              - key: FRONTEND_HOST
+                fromService:
+                  type: web
+                  name: campus-day-web
+                  envVarKey: RENDER_EXTERNAL_HOSTNAME
+              - key: BACKEND_HOST
+                fromService:
+                  type: web
+                  name: campus-day-api
+                  envVarKey: RENDER_EXTERNAL_HOSTNAME
+              - key: CAREER_PREP_ENABLED
+                value: "false"
+              - key: CURRENT_AFFAIRS_ENABLED
+                value: "false"
+
+          - type: web
+            name: campus-day-web
+            runtime: static
+            rootDir: frontend
+            buildCommand: npm ci && npm run build
+            staticPublishPath: ./dist
+            autoDeployTrigger: commit
+            buildFilter:
+              paths:
+                - frontend/**
+            envVars:
+              - key: VITE_API_BASE_URL
+                fromService:
+                  type: web
+                  name: campus-day-api
+                  envVarKey: RENDER_EXTERNAL_HOSTNAME
+            routes:
+              - type: rewrite
+                source: /*
+                destination: /index.html

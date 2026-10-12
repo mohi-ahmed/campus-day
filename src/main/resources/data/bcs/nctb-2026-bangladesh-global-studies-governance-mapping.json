@@ -1,0 +1,35 @@
+{
+  "sourceId": "NCTB_2026_9_10_BANGLADESH_GLOBAL_STUDIES",
+  "language": "BANGLA",
+  "ocrLanguage": "ben",
+  "dpi": 250,
+  "ranges": [
+    {
+      "pageStart": 79,
+      "pageEnd": 89,
+      "chapter": "ষষ্ঠ অধ্যায়",
+      "heading": "রাষ্ট্র, নাগরিকতা ও আইন",
+      "subjectCode": "BANGLADESH_AFFAIRS",
+      "topicCode": "BD_CONSTITUTION",
+      "conceptCodes": []
+    },
+    {
+      "pageStart": 90,
+      "pageEnd": 102,
+      "chapter": "সপ্তম অধ্যায়",
+      "heading": "বাংলাদেশ সরকারের বিভিন্ন অঙ্গ ও প্রশাসন ব্যবস্থা",
+      "subjectCode": "BANGLADESH_AFFAIRS",
+      "topicCode": "BD_GOVERNMENT_SYSTEM",
+      "conceptCodes": []
+    },
+    {
+      "pageStart": 103,
+      "pageEnd": 111,
+      "chapter": "অষ্টম অধ্যায়",
+      "heading": "বাংলাদেশের গণতন্ত্র ও নির্বাচন ব্যবস্থা",
+      "subjectCode": "BANGLADESH_AFFAIRS",
+      "topicCode": "BD_POLITICAL_SYSTEM",
+      "conceptCodes": []
+    }
+  ]
+}

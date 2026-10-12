@@ -1,0 +1,46 @@
+[
+  {
+    "code": "BANGLA",
+    "parentCode": null,
+    "level": "SUBJECT",
+    "nameEn": "Bangla Language and Literature",
+    "nameBn": "বাংলা ভাষা ও সাহিত্য",
+    "syllabusMarks": 35,
+    "syllabusVersion": "BPSC_PRELIMINARY_CURRENT",
+    "displayOrder": 1,
+    "active": true
+  },
+  {
+    "code": "GRAMMAR",
+    "parentCode": "BANGLA",
+    "level": "TOPIC",
+    "nameEn": "Grammar",
+    "nameBn": "ব্যাকরণ",
+    "syllabusMarks": null,
+    "syllabusVersion": "BPSC_PRELIMINARY_CURRENT",
+    "displayOrder": 1,
+    "active": true
+  },
+  {
+    "code": "SAMAS",
+    "parentCode": "GRAMMAR",
+    "level": "SUBTOPIC",
+    "nameEn": "Samas",
+    "nameBn": "সমাস",
+    "syllabusMarks": null,
+    "syllabusVersion": "BPSC_PRELIMINARY_CURRENT",
+    "displayOrder": 1,
+    "active": true
+  },
+  {
+    "code": "BANGLA.GRAMMAR.SAMAS.BAHUBRIHI",
+    "parentCode": "SAMAS",
+    "level": "CONCEPT",
+    "nameEn": "Bahubrihi identification",
+    "nameBn": "বহুব্রীহি সমাস নির্ণয়",
+    "syllabusMarks": null,
+    "syllabusVersion": "BPSC_PRELIMINARY_CURRENT",
+    "displayOrder": 1,
+    "active": true
+  }
+]

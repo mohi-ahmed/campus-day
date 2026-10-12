@@ -1,0 +1,51 @@
+.manager-review__aside { padding: 72px 74px 56px 0; border-right: 1px solid var(--cd-line); display: flex; flex-direction: column; justify-content: center; }
+.manager-review__symbol { width: 48px; height: 48px; border-radius: 10px; display: grid; place-items: center; color: #176f46; background: var(--cd-lime-soft); }
+.manager-review__label { margin: 24px 0 0; color: #26734a; font-size: 10px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.cd-auth-page .manager-review__aside h1 { margin: 15px 0 0; font-size: clamp(50px,5.2vw,76px); line-height: 1.02; letter-spacing: -.065em; }
+.manager-review__aside h1 span { color: #6b7770; }
+.manager-review__aside > p:last-child { max-width: 560px; margin: 28px 0 0; color: #59675f; font-size: 14px; line-height: 1.7; }
+.manager-review__panel { padding: 64px 0 64px 74px; display: grid; place-items: center; }
+.manager-review__card { width: min(100%,500px); padding: 28px; border: 1px solid #d6ded9; border-radius: 12px; background: #fff; box-shadow: 0 18px 50px rgb(20 46 32 / 9%); }
+.manager-review__heading { padding-bottom: 22px; border-bottom: 1px solid #e4eae6; display: flex; align-items: center; gap: 13px; }
+.manager-review__heading > span { width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center; color: #0d7e56; background: #e9f7f1; }
+.manager-review__heading small { color: #748079; font-size: 10px; }
+.manager-review__heading h2 { margin: 3px 0 0; font-size: 24px; letter-spacing: -.035em; }
+.manager-review__details { margin: 20px 0; display: grid; gap: 12px; }
+.manager-review__details div { display: grid; grid-template-columns: 125px 1fr; gap: 18px; }
+.manager-review__details dt { color: #79857f; font-size: 11px; }
+.manager-review__details dd { margin: 0; overflow-wrap: anywhere; color: #25372e; font-size: 11px; font-weight: 650; }
+.manager-review__deadline { padding: 11px 12px; border-radius: 8px; display: flex; align-items: center; gap: 8px; color: #705317; background: #fff5da; font-size: 11px; }
+.manager-review__actions { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.manager-review__actions button { min-height: 46px; padding: 0 14px; border: 1px solid #cdd7d1; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; color: #24372d; background: #fff; font-size: 11px; font-weight: 750; cursor: pointer; transition: transform 160ms ease, border-color 160ms ease, background 160ms ease; }
+.manager-review__actions button:hover { border-color: #799184; background: #f7faf8; }
+.manager-review__actions button:active { transform: scale(.98); }
+.manager-review__actions button.is-primary { border-color: #0c7c57; color: #fff; background: #0c7c57; }
+.manager-review__actions button.is-danger { border-color: #a94747; color: #fff; background: #a94747; }
+.manager-review__actions button:disabled { opacity: .6; cursor: wait; }
+.manager-review__note { margin: 12px 0 0; color: #7b8781; font-size: 10px; text-align: center; }
+.manager-review__message { padding: 24px 0 16px; display: grid; justify-items: center; text-align: center; }
+.manager-review__message > span { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; color: #a04444; background: #fff0f0; }
+.manager-review__message.is-success > span { color: #0b7a55; background: #e7f7f0; }
+.manager-review__message h2 { margin: 16px 0 7px; font-size: 25px; letter-spacing: -.035em; }
+.manager-review__message p { max-width: 350px; margin: 0; color: #65736c; font-size: 12px; line-height: 1.6; }
+.manager-review__home { margin-top: 10px; display: block; color: #176f46; font-size: 11px; font-weight: 700; text-align: center; }
+.manager-review__loading { display: grid; gap: 12px; }
+.manager-review__loading span { height: 18px; border-radius: 7px; background: #e7ece9; animation: manager-review-pulse 900ms ease-in-out infinite alternate; }
+.manager-review__loading span:nth-child(2) { width: 76%; }
+.manager-review__loading span:nth-child(3) { width: 48%; }
+@keyframes manager-review-pulse { to { opacity: .45; } }
+
+@media (max-width: 860px) {
+  .manager-review__aside { display: none; }
+  .manager-review__panel { min-height: calc(100dvh - 76px); padding: 44px 20px; }
+}
+
+@media (max-width: 520px) {
+  .manager-review__card { padding: 22px 18px; }
+  .manager-review__details div { grid-template-columns: 1fr; gap: 3px; }
+  .manager-review__actions { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .manager-review__loading span, .manager-review__actions button { animation: none; transition: none; }
+}
