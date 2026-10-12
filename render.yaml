@@ -28,7 +28,7 @@ projects:
               - key: MONGODB_DATABASE
                 value: CampusDay
               - key: AUTH_JWT_SECRET
-                generateValue: true
+                sync: false
               - key: AUTH_OTP_PEPPER
                 generateValue: true
               - key: CALENDAR_TOKEN_ENCRYPTION_KEY

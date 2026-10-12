@@ -24,7 +24,9 @@ free web-service instance hours.
 
 1. Open Render Dashboard and choose **New > Blueprint**.
 2. Select the repository containing `render.yaml`.
-3. When prompted, set `MONGODB_URI` to the Atlas SRV connection string.
+3. When prompted, set `MONGODB_URI` to the Atlas SRV connection string and
+   `AUTH_JWT_SECRET` to a Base64-encoded value containing at least 64 random
+   bytes (required by HS512).
 4. Apply the Blueprint and wait for both services to become live.
 
 The Blueprint passes each generated Render hostname to the other service, so
