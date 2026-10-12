@@ -7,6 +7,7 @@ COPY mvnw pom.xml ./
 RUN chmod +x mvnw \
     && ./mvnw -B -ntp dependency:go-offline
 
+COPY lombok.config ./
 COPY src/ src/
 RUN ./mvnw -B -ntp -DskipTests package \
     && cp target/*.jar /workspace/app.jar
